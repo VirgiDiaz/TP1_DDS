@@ -1,81 +1,71 @@
-.color{
+.color {
     background-color: #F1EBE6;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
-.fondo{
-    background-color: #F8F9FA;
-}
-h1{
-    
+
+.titulo {
     text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.titulo2 {
+    text-align: left;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-}
-h2 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    padding: 10px;
+    font-size: x-large;
+
 }
 
 
 .linkDeContacto {
-    position:  fixed;
+    position: fixed;
     bottom: 0%;
     display: flex;
     background-color: #faf6f8;
     width: 100%;
-    justify-content: flex-end ;
+    justify-content: flex-end;
 }
 
-.linkDeContacto .nav-link
-{
+.linkDeContacto .nav-link {
     padding: 20px;
 }
 
-.herramientas{
-    display:flex;
-}
 
 
 .titulo-subrayado {
     position: relative;
     display: inline-block;
-    font-weight: bold;
-    font-size: 1.5rem; 
-    margin-bottom: 1.5rem; 
-    color: #343a40; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #343a40;
 }
 
 .titulo-subrayado::after {
     content: '';
     position: absolute;
-    width: 60%; 
-    height: 4px; 
-    background-color: #EDDDD4; 
+    width: 60%;
+    height: 4px;
+    background-color: #EDDDD4;
     bottom: -5px;
-    left: 20%; 
+    left: 20%;
+
 }
 
-.card {
-    border: 1px solid #E5446D; 
-    border-radius: 100px; 
-}
-
-.card-body {
-    padding: 1.5rem;
-}
-.titulo-subrayado .misProyectos{
+.titulo-subrayado .misProyectos {
     text-align: left;
-    
 }
-p{
+
+p {
     text-align: justify;
     height: 100%;
     font-family: "Nunito Sans", sans-serif;
@@ -83,19 +73,42 @@ p{
     font-weight: 500;
     font-style: normal;
     font-variation-settings:
-        "wdth" 100,
-        "YTLC" 500
+        "wdth"100,
+        "YTLC"500
 }
-ul{
+
+ul {
     height: 100%;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-variation-settings:
-        "wdth" 100,
-        "YTLC" 500
+        "wdth"100,
+        "YTLC"500
 }
-.degradado{
-    background: linear-gradient(to bottom right, pink, white);
+
+.degradado {
+    background: linear-gradient(to bottom right, #ffc0cb, white);
+}
+
+.navbar .nav-link {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.navbar .nav-link.active {
+
+    font-weight: 600;
+}
+
+.bottonColor {
+
+    color: black;
+    background-color: pink;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    height: 35px;
+
 }
