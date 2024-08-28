@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <title> Formulario de contacto </title>
 </head>
 
 <body class="pb-5 estilo2">
@@ -39,8 +40,8 @@
 
     <div class="container-lg my-5 ">
         <section>
-            <h1 class="text-center mb-4">¡Estoy aquí para ayudarte!</h1>
-            <form method="post">
+            <h1 class="text-center mb-4 titulo">¡Estoy aquí para ayudarte!</h1>
+            <form action="https://formsubmit.co/diazvirr@gmail.com" method="post">
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre:</label>
                     <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tu nombre"
@@ -90,12 +91,13 @@
         </div>
     </footer>
     <script>
-        window.onload = function() {
+        window.onload = function () {
             var darkLight = localStorage.getItem('estilo');
             if (darkLight) {
                 document.getElementById('estilo').setAttribute('href', darkLight);
             }
         };
+
         function s() {
             var styleSheet = document.getElementById('estilo');
             var newStyle = styleSheet.getAttribute('href') === 'css/style1.css' ? 'css/style2.css' : 'css/style1.css';

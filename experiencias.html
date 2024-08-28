@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <title> Experiencia </title>
 </head>
 
 <body>
@@ -42,10 +43,10 @@
             <h1 class="titulo-subrayado mb-4 ">Experiencia Laboral</h1>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <div class="card shadow-sm h-100">
+                    <div class="tarjeta shadow-sm h-100">
                         <div class="card-body">
                             <h2 class="titulo2">Desarrolladora web Frontend </h2>
-                            <h6 class="text-muted"> InnovateWeb Solutions (Marzo de 2022 - Junio de 2023)</h6>
+                            <h6 class=" tit6"> InnovateWeb Solutions (Marzo de 2022 - Junio de 2023)</h6>
                             <p class="mt-3">Trabajé en el desarrollo y mantenimiento de sitios y aplicaciones
                                 web para una variedad de clientes, desde pequeñas empresas hasta grandes corporaciones.
                                 Utilicé HTML, CSS y JavaScript para crear interfaces de usuario modernas y responsivas,
@@ -58,10 +59,10 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="card shadow-sm h-100">
+                    <div class="tarjeta shadow-sm h-100">
                         <div class="card-body">
                             <h2 class="titulo2">Diseñadora de Experiencia de Usuario </h2>
-                            <h6 class="text-muted">Creative Vision Studio (Actualidad)</h6>
+                            <h6 class="tit6">Creative Vision Studio (Actualidad)</h6>
                             <p class=" card-text mt-3">Creo wireframes, prototipos interactivos y diseños visuales
                                 utilizando Figma y Adobe XD, mejorando la usabilidad del producto y la satisfacción del
                                 cliente. Realizo pruebas de usuario y analizo feedback para iterar sobre el diseño de
@@ -93,12 +94,13 @@
         </div>
     </footer>
     <script>
-        window.onload = function() {
+        window.onload = function () {
             var darkLight = localStorage.getItem('estilo');
             if (darkLight) {
                 document.getElementById('estilo').setAttribute('href', darkLight);
             }
         };
+
         function s() {
             var styleSheet = document.getElementById('estilo');
             var newStyle = styleSheet.getAttribute('href') === 'css/style1.css' ? 'css/style2.css' : 'css/style1.css';

@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
+    <title> Portfolio </title>
 </head>
 
 <body class="pb-5 degradado">
@@ -66,7 +67,7 @@
         </section>
     </div>
     <footer>
-        <div class="linkDeContacto">
+        <div class="linkDeContacto  degradado">
             <a class="nav-link " href="https://www.instagram.com/virr.diaz">Instagram <img
                     src="images/logos/Instagram.png" class="rounded-circle" width="20px" height="20px"> </a>
             <a class="nav-link" href="https://github.com/VirgiDiaz"> GitHub <img src="images/logos/GitHub.png"
@@ -80,12 +81,13 @@
         </div>
     </footer>
     <script>
-        window.onload = function() {
+        window.onload = function () {
             var darkLight = localStorage.getItem('estilo');
             if (darkLight) {
                 document.getElementById('estilo').setAttribute('href', darkLight);
             }
         };
+
         function s() {
             var styleSheet = document.getElementById('estilo');
             var newStyle = styleSheet.getAttribute('href') === 'css/style1.css' ? 'css/style2.css' : 'css/style1.css';

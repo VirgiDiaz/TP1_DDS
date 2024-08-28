@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <title> Proyectos </title>
 </head>
 
 <body class="estilo2">
@@ -45,7 +46,7 @@
             <div class="row">
                 <div class="col">
                     <article>
-                        <h3> Plataforma de comercio electrónico (2023) </h3>
+                        <h3 class="tit3"> Plataforma de comercio electrónico (2023) </h3>
                         <p> Desarrollé un sitio web de comercio electrónico completo para una tienda
                             de ropa en línea,
                             permitiendo a los usuarios navegar, buscar y comprar productos. Implementé un sistema de
@@ -64,7 +65,7 @@
             </div>
             <div class="col">
                 <article>
-                    <h3>Sensor de llenado de cestos de basura con IoT (Actual) </h3>
+                    <h3 class="tit3">Sensor de llenado de cestos de basura con IoT (Actual) </h3>
                     <p> Diseñé un sistema para supervisar el nivel de llenado de cestos de basura
                         utilizando sensores
                         ultrasónicos y un microcontrolador ESP32. El sensor detecta la cantidad de basura y transmite
@@ -97,12 +98,13 @@
         </div>
     </footer>
     <script>
-        window.onload = function() {
+        window.onload = function () {
             var darkLight = localStorage.getItem('estilo');
             if (darkLight) {
                 document.getElementById('estilo').setAttribute('href', darkLight);
             }
         };
+
         function s() {
             var styleSheet = document.getElementById('estilo');
             var newStyle = styleSheet.getAttribute('href') === 'css/style1.css' ? 'css/style2.css' : 'css/style1.css';
