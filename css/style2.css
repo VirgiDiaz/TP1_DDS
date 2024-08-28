@@ -1,5 +1,5 @@
 .color {
-    background-color: #F1EBE6;
+    background-color: #fb6f92;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -12,6 +12,7 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+    color: black;
 }
 
 .titulo2 {
@@ -21,6 +22,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: x-large;
+    color: black;
 
 }
 
@@ -29,7 +31,7 @@
     position: fixed;
     bottom: 0%;
     display: flex;
-    background-color: #faf6f8;
+    background-color: #cc2f56c9;
     width: 100%;
     justify-content: flex-end;
 }
@@ -47,7 +49,7 @@
     font-weight: 700;
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #343a40;
+    color: black;
 }
 
 .titulo-subrayado::after {
@@ -55,7 +57,7 @@
     position: absolute;
     width: 60%;
     height: 4px;
-    background-color: #EDDDD4;
+    background-color: rgb(184, 0, 107);
     bottom: -5px;
     left: 20%;
 
@@ -74,7 +76,8 @@ p {
     font-style: normal;
     font-variation-settings:
         "wdth"100,
-        "YTLC"500
+        "YTLC"500;
+    color: black;
 }
 
 ul {
@@ -89,7 +92,7 @@ ul {
 }
 
 .degradado {
-    background: linear-gradient(to bottom right, #ffc0cb, white);
+    background: linear-gradient(to bottom right, #fb6f92, rgb(184, 0, 107));
 }
 
 .navbar .nav-link {
@@ -98,20 +101,23 @@ ul {
     font-weight: 400;
 }
 
-.navbar .nav-link.active {
+.navbar .nav-link.active{
 
     font-weight: 600;
+    color: black;
+
 }
 
 .bottonColor {
 
-    color: black;
-    background-color: pink;
+    color: white;
+    background-color: rgb(184, 0, 107);
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     height: 35px;
 
 }
 .estilo2{
-    background-color: #F8F9FA;
+    background-color: #fb6f92;
+    background: #fb6f92;
 }

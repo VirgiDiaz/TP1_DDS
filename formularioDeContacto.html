@@ -12,7 +12,7 @@
         rel="stylesheet">
 </head>
 
-<body class="pb-5 bg-light">
+<body class="pb-5 estilo2">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
@@ -30,6 +30,7 @@
                     <a class="nav-link " href="habilidades.html"> Habilidades</a>
                     <a class="nav-link active" href="formularioDeContacto.html">Contacto</a>
                     <a class="nav-link" href="proyectos.html"> Proyectos</a>
+                    <button class="nav-link" onclick="s()">Estilo</button>
 
                 </div>
             </div>
@@ -88,6 +89,20 @@
 
         </div>
     </footer>
+    <script>
+        window.onload = function() {
+            var darkLight = localStorage.getItem('estilo');
+            if (darkLight) {
+                document.getElementById('estilo').setAttribute('href', darkLight);
+            }
+        };
+        function s() {
+            var styleSheet = document.getElementById('estilo');
+            var newStyle = styleSheet.getAttribute('href') === 'css/style1.css' ? 'css/style2.css' : 'css/style1.css';
+            styleSheet.setAttribute('href', newStyle);
+            localStorage.setItem('estilo', newStyle);
+        }
+    </script>
 </body>
 
 </html>

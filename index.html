@@ -34,7 +34,7 @@
                     <a class="nav-link" href="habilidades.html"> Habilidades</a>
                     <a class="nav-link" href="formularioDeContacto.html">Contacto</a>
                     <a class="nav-link" href="proyectos.html"> Proyectos</a>
-                    <button class="nav-link" id="btnEstilo"> Estilo </button>
+                    <button class="nav-link" onclick="s()">Estilo</button>
 
                 </div>
             </div>
@@ -80,14 +80,18 @@
         </div>
     </footer>
     <script>
-        document.getElementById('btnEstilo').addEventListener('click', function () {
-            var hojaEstilo = document.getElementById('estilo');
-            if (hojaEstilo.getAttribute('href') === 'css/style1.css') {
-                hojaEstilo.setAttribute('href', 'css/style2.css');
-            } else {
-                hojaEstilo.setAttribute('href', 'css/style1.css');
+        window.onload = function() {
+            var darkLight = localStorage.getItem('estilo');
+            if (darkLight) {
+                document.getElementById('estilo').setAttribute('href', darkLight);
             }
-        });
+        };
+        function s() {
+            var styleSheet = document.getElementById('estilo');
+            var newStyle = styleSheet.getAttribute('href') === 'css/style1.css' ? 'css/style2.css' : 'css/style1.css';
+            styleSheet.setAttribute('href', newStyle);
+            localStorage.setItem('estilo', newStyle);
+        }
     </script>
 </body>
 
